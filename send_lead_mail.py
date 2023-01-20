@@ -19,7 +19,7 @@ def lead_magnet_sending(receiver_email):
 
         msg.add_alternative(email_body, subtype='html')
 
-        with open('documents\Essential Skills and Knowledge For Blockchain Mastery.pdf', 'rb') as content_file:
+        with open('documents/Essential Skills and Knowledge For Blockchain Mastery.pdf', 'rb') as content_file:
             content = content_file.read()
             msg.add_attachment(content, maintype='application', subtype='pdf', filename='Essential Skills and Knowledge For Blockchain Mastery.pdf')
         
