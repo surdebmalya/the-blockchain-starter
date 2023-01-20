@@ -9,7 +9,6 @@ app.config["DEBUG"] = True
 BOOK_NAME = "the-blockchain-starter"
 BASE_LINK = "https://book-survey.surdebmalya11.repl.co/" + BOOK_NAME
 api_key = os.environ["access_key"]
-# api_key = "5df9E5s2T"
 
 
 # Landing page
