@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block body %}
+<section class="w-full px-6 pb-12 antialiased bg-white">
+  <div class="mx-auto max-w-7xl">
+    <div class="px-6 mx-auto max-w-7xl">
+      <div class="flex items-center justify-between h-20">
+        <div
+          class="relative z-10 flex items-center w-auto px-0 leading-10 md:px-2 lg:flex-grow-0 lg:flex-shrink-0 lg:text-left">
+          <a href="https://surdebmalya.github.io/pages/books/books.html" target="_blank"
+            class="inline-block font-sans text-2xl font-extrabold text-left text-black no-underline bg-transparent cursor-pointer focus:no-underline">
+            <img src="{{ url_for('static', filename='favicon.ico') }}" width="55px" height="55px">
+          </a>
+        </div>
+
+        <div class="flex items-center space-x-8">
+          <a href="https://surdebmalya.github.io/pages/books/books.html" target="_blank"
+            class="px-4 py-2 font-bold text-white bg-green-500 rounded">See my Books</a>
+        </div>
+      </div>
+
+      <!-- Main Hero Content -->
+      <div class="container max-w-lg px-4 py-32 mx-auto text-left md:max-w-none md:text-center">
+        <p
+          class="pt-4 mx-auto mb-4 text-4xl font-black leading-tight text-center text-gray-900 xl:pt-6 sm:text-5xl lg:text-4xl xl:text-5xl">
+          Take Your First Step
+          <br />To The World of Blockchain
+        </p>
+
+        <div class="pt-5 space-y-3 space-y-4 leading-6 text-left xl:pt-8 xl:space-y-5">
+          <p
+            class="pt-3 mb-2 mr-12 text-xl font-normal leading-relaxed text-center text-gray-900 lg:mb-4 xl:pt-5 sm:text-2xl lg:text-xl xl:text-2xl">
+            Subscribe to us to get <span class="text-3xl font-extrabold text-green-500">FREE</span> stepping stone of
+            blockchain
+          </p>
+          <div class="relative flex items-center max-w-md mx-auto mt-12 overflow-hidden text-center rounded">
+            <form action="/subscribe1" method="post" class="mb-2">
+              <div class="relative flex items-center overflow-hidden border-gray-200 rounded-lg">
+                <input type="text"
+                  class="w-full py-4 pr-0 m-0 overflow-visible font-medium duration-300 border-2 border-green-500 rounded-full outline-none sm:py-5 sm:pr-48 cursor-text pl-7 focus:outline-none focus-within:border-gray-200 hover:border-gray-400"
+                  placeholder="Enter Email" name="email" id="email" required>
+                <button type="submit" class="absolute right-0 h-12 px-8 mr-3 text-white bg-green-500 rounded-full">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End Main Hero Content -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="w-full pb-32 bg-white">
+  <div class="relative px-12 mx-auto max-w-7xl">
+
+    <div
+      class="relative grid items-center grid-cols-1 gap-10 p-12 overflow-hidden shadow-2xl md:p-16 lg:p-20 xl:p-24 bg-gradient-to-r from-green-400 to-green-500 rounded-2xl md:grid-cols-5 lg:gap-0">
+
+      <div class="absolute top-0 right-0">
+        <svg viewBox="0 0 487 487" class="object-cover w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z"
+            fill="#FFF" fill-rule="nonzero" fill-opacity=".1"></path>
+        </svg>
+      </div>
+
+      <div class="absolute bottom-0 left-0 h-full">
+        <svg viewBox="0 0 487 487" class="w-auto h-full opacity-75 object-stretch" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0 .3c67 2.1 134.1 4.3 186.3 37 52.2 32.7 89.6 95.8 112.8 150.6 23.2 54.8 32.3 101.4 61.2 149.9 28.9 48.4 77.7 98.8 126.4 149.2H0V.3z"
+            fill="#FFF" fill-rule="nonzero" fill-opacity=".1"></path>
+        </svg>
+      </div>
+
+      <div class="relative z-30 col-span-1 md:col-span-3">
+        <h2 class="mb-1 text-3xl font-bold leading-tight text-white md:mb-3 md:text-3xl lg:text-4xl xl:text-5xl">
+          The Blockchain Starter
+          <span class="block lg:mt-3">
+            Ready to get started?
+          </span>
+        </h2>
+        <p class="max-w-sm my-6 text-base font-normal text-green-100 xl:max-w-lg lg:pr-0 pr-7 lg:text-xl">
+          A Beginner’s Guide to the Technology.
+          Unlocking the Potential of Blockchain for Beginners.
+        </p>
+        <div class="py-3"></div>
+        <a href="https://www.amazon.in/dp/B0BSFVPKY2" target="_blank"
+          class="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-green-500 whitespace-no-wrap bg-white border-2 border-transparent rounded-full shadow-sm md:w-auto md:inline-flex hover:bg-transparent hover:text-white hover:border-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600">
+          Indian Readers
+        </a>
+        <span style="padding-left:10px;"></span>
+        <a href="https://www.amazon.com/dp/B0BSFVPKY2" target="_blank"
+          class="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-green-500 whitespace-no-wrap bg-white border-2 border-transparent rounded-full shadow-sm md:w-auto md:inline-flex hover:bg-transparent hover:text-white hover:border-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600">
+          Foreign Readers
+        </a>
+        <span style="padding-left:10px;"></span>
+        <a href="https://surdebmalya.github.io/" target="_blank"
+          class="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-green-500 whitespace-no-wrap bg-white border-2 border-transparent rounded-full shadow-sm md:w-auto md:inline-flex hover:bg-transparent hover:text-white hover:border-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600">
+          Connect With Author
+        </a>
+        <div class="py-5"></div>
+        <ul>
+          <li class="flex items-center py-2 space-x-4 xl:py-3">
+            <img src="https://cdn.devdojo.com/images/february2021/checkmark.png" class="w-4 h-4">
+            <span class="font-medium font-bold text-gray-700">
+              This Book Is Made for Absolute Beginners
+            </span>
+          </li>
+          <li class="flex items-center py-2 space-x-4 xl:py-3">
+            <img src="https://cdn.devdojo.com/images/february2021/checkmark.png" class="w-4 h-4">
+            <span class="font-medium font-bold text-gray-700">
+              Covered All Aspects of Blockchain Technology
+            </span>
+          </li>
+          <li class="flex items-center py-2 space-x-4 xl:py-3">
+            <img src="https://cdn.devdojo.com/images/february2021/checkmark.png" class="w-4 h-4">
+            <span class="font-medium font-bold text-gray-700">
+              Reader Will Get The Answer to The Question, Why Blockchain
+            </span>
+          </li>
+          <li class="flex items-center py-2 space-x-4 xl:py-3">
+            <img src="https://cdn.devdojo.com/images/february2021/checkmark.png" class="w-4 h-4">
+            <span class="font-medium font-bold text-gray-700">
+              Build A Solid Foundation of Your Blockchain Journey
+            </span>
+          </li>
+          <li class="flex items-center py-2 space-x-4 xl:py-3">
+            <img src="https://cdn.devdojo.com/images/february2021/checkmark.png" class="w-4 h-4">
+            <span class="font-medium font-bold text-gray-700">
+              How This Technology Can Be Used to Create A Better Future
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center h-full col-span-1 md:col-span-2 shadow-2xl bg-gradient-to-r from-green-400 to-green-500 rounded-2xl md:grid-cols-5 lg:gap-0">
+        <a href="https://surdebmalya.github.io/pages/books/the-blockchain-starter-a-beginners-guide-to-the-technology.html"
+          target="_blank">
+          <img src="https://surdebmalya.github.io/pages/books/images/book4.png" class="rounded" alt="Book Cover">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
