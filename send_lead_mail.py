@@ -3,10 +3,10 @@ import smtplib
 from email.message import EmailMessage
 import email_content as mail_body
 
-# sender = os.environ["mail"]
-# password = os.environ["pass"]
-sender = 'official.surdebmalya@gmail.com'
-password = 'mnmniqdpekwubcia'
+sender = os.environ["mail"]
+password = os.environ["pass"]
+# sender = 'official.surdebmalya@gmail.com'
+# password = 'mnmniqdpekwubcia'
 
 def lead_magnet_sending(receiver_email):
     try:
